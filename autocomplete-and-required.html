@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- 
+        - El autocomplete es usado para que el navegador rellene automaticamente los campos que ya conoce del usuario
+        - Para validación de datos hay varias capaz de validación, y JavaScript sin duda juega un papel importante, validar con JavaScript NO es malo, de hecho, es más recomendable, pero también es importante poner dichos atributos HTML para realizar la validación, sin embargo, la validación más importante es la que se hace del lado del servidor, ya que es quien tiene la última palabra sobre si una acción procede o no 
+      -->
+
+      <form>
+        <label>
+          <span>Name</span>
+          <input 
+            type="text" 
+            name="name" 
+            autocomplete="name" 
+            required 
+          />
+        </label>
+        <label>
+          <span>Email</span>
+          <input 
+            type="email" 
+            name="email" 
+            autocomplete="email" 
+            required
+          />
+        </label>
+        <label>
+          <span>Country</span>
+          <input 
+            type="text" 
+            name="country" 
+            autocomplete="country" 
+            required
+          />
+        </label>
+        <label>
+          <span>Postal code</span>
+          <input
+            type="number"
+            name="postal-code"
+            autocomplete="postal-code"
+            required
+          />
+        </label>
+        <input type="submit" value="Send">
+      </form>
+    </main>
+  </body>
+</html>
