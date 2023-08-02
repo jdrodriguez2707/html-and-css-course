@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+  </head>
+  <body>
+    <!-- 
+    - El atributo for es usado para enlazar un label con un input de tal manera que al hacer click en el texto del label podamos interactuar con el input. El input debe tener un id con el mismo valor que el for 
+    - El atributo for no es necesario si la etiqueta input está dentro de la etiqueta label
+    - El atributo name es usado para enviar el valor del input a algún lado, como puede ser la base de datos
+  -->
+    <h1>Calendar to book a flight✈️</h1>
+    <!-- <form>
+      <label>
+        Day
+        <input type="date" name="day" />
+      </label>
+      <label>
+        Month
+        <input type="month" name="month" />
+      </label>
+      <label>
+        Week
+        <input type="week" name="week" />
+      </label>
+      <label>
+        Time
+        <input type="time" name="time" />
+      </label>
+      <input type="submit" value="Reserve" />
+    </form> -->
+
+    <form>
+      <label>
+        <input type="datetime-local" name="date" />
+      </label>
+      <input type="submit" value="Reserve" />
+    </form>
+  </body>
+</html>
