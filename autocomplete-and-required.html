@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <form>
-      <label for="name">What's your name?</label>
-      <input type="text" name="name" id="name" autocomplete="name" required>
-      
-      <label for="email">What's your email</label>
-      <input type="email" name="email" id="email" autocomplete="email" required>
+    <main>
+      <form>
+        <fieldset>
+          <legend>
+            <i><b>Personal information</b></i>
+          </legend>
+          <label for="first-name">What's your name?</label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            autocomplete="name"
+            required
+          />
 
-      <label for="country">What's your country?</label>
-      <input type="text" name="country" id="country" autocomplete="country" required>
+          <label for="email">What's your email?</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            required
+          />
 
-      <label for="postal-code">What's your postal code?</label>
-      <input type="number" name="postal-code" id="postal-code" autocomplete="postal-code" required>
+          <label for="country">Which country do you live?</label>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            autocomplete="country"
+            required
+          />
 
-      <input type="submit" value="Send">
-    </form>
+          <label for="postal-code">What's your postal code?</label>
+          <input
+            type="number"
+            name="postal-code"
+            id="postal-code"
+            autocomplete="postal-code"
+            required
+          />
+
+          <input type="submit" value="Send" />
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
