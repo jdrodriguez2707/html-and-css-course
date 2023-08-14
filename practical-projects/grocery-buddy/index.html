@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
       content="Discover the best shopping lists for the supermarket"
-    />
-    <meta name="robots" content="index, follow" />
+    >
+    <meta name="robots" content="index, follow">
     <title>Grocery Buddy</title>
   </head>
   <body>
     <header>
+      <!-- Logo -->
       <figure style="margin: 0">
         <img
           src="../../assets/images/logo.png"
           alt="logo"
           title="grocery-buddy"
           style="width: 100px"
-        />
+        >
       </figure>
       <h1>Grocery Buddy</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Shopping lists</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="#shopping-list">Shopping lists</a></li>
+          <li><a href="#about-us">About us</a></li>
+          <li><a href="#form">Contact us</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <article>
-        <h2>Shopping list 1</h2>
-        <section id="shopping-list">
+      <!-- Shopping list section -->
+      <section id="shopping-list">
+        <h2>Shopping lists</h2>
+        <form>
+          <label for="filter">Filter by date</label>
+          <input id="filter" type="date" name="filter">
+          <button type="submit">Filter</button>
+        </form>
+        <article>
+          <h3>Shopping list gold 💛</h3>
           <ul>
             <li>
               Meats
@@ -46,7 +54,7 @@
                       alt="chicken"
                       title="chicken"
                       style="width: 100px"
-                    />
+                    >
                     <figcaption>Grilled chicken</figcaption>
                   </figure>
                 </li>
@@ -55,11 +63,11 @@
                   <figure style="margin: 0">
                     <img
                       src="../../challenges/assets/images/pork_meat.jpg"
-                      alt="chicken"
-                      title="chicken"
+                      alt="pork meat"
+                      title="pork meat"
                       style="width: 100px"
-                    />
-                    <figcaption>Grilled chicken</figcaption>
+                    >
+                    <figcaption>Pork meat</figcaption>
                   </figure>
                 </li>
                 <li>
@@ -67,11 +75,11 @@
                   <figure style="margin: 0">
                     <img
                       src="../../challenges/assets/images/fish.jpg"
-                      alt="chicken"
-                      title="chicken"
+                      alt="fish"
+                      title="fish"
                       style="width: 100px"
-                    />
-                    <figcaption>Grilled chicken</figcaption>
+                    >
+                    <figcaption>Fish</figcaption>
                   </figure>
                 </li>
               </ol>
@@ -84,11 +92,11 @@
                   <figure style="margin: 0">
                     <img
                       src="../../challenges/assets/images/onion.jpg"
-                      alt="chicken"
-                      title="chicken"
+                      alt="onion"
+                      title="onion"
                       style="width: 100px"
-                    />
-                    <figcaption>Grilled chicken</figcaption>
+                    >
+                    <figcaption>Onion</figcaption>
                   </figure>
                 </li>
                 <li>
@@ -96,11 +104,11 @@
                   <figure style="margin: 0">
                     <img
                       src="../../challenges/assets/images/tomato.jpg"
-                      alt="chicken"
-                      title="chicken"
+                      alt="tomato"
+                      title="tomato"
                       style="width: 100px"
-                    />
-                    <figcaption>Grilled chicken</figcaption>
+                    >
+                    <figcaption>Tomato</figcaption>
                   </figure>
                 </li>
                 <li>
@@ -108,11 +116,11 @@
                   <figure style="margin: 0">
                     <img
                       src="../../challenges/assets/images/lettuce.jpg"
-                      alt="chicken"
-                      title="chicken"
+                      alt="lettuce"
+                      title="lettuce"
                       style="width: 100px"
-                    />
-                    <figcaption>Grilled chicken</figcaption>
+                    >
+                    <figcaption>Lettuce</figcaption>
                   </figure>
                 </li>
               </ol>
@@ -125,11 +133,11 @@
                   <figure style="margin: 0">
                     <img
                       src="../../challenges/assets/images/apple.jpg"
-                      alt="chicken"
-                      title="chicken"
+                      alt="apple"
+                      title="apple"
                       style="width: 100px"
-                    />
-                    <figcaption>Grilled chicken</figcaption>
+                    >
+                    <figcaption>Apple</figcaption>
                   </figure>
                 </li>
                 <li>
@@ -137,11 +145,11 @@
                   <figure style="margin: 0">
                     <img
                       src="../../challenges/assets/images/pineapple.jpg"
-                      alt="chicken"
-                      title="chicken"
+                      alt="pineapple"
+                      title="pineapple"
                       style="width: 100px"
-                    />
-                    <figcaption>Grilled chicken</figcaption>
+                    >
+                    <figcaption>Pineapple</figcaption>
                   </figure>
                 </li>
                 <li>
@@ -149,27 +157,174 @@
                   <figure style="margin: 0">
                     <img
                       src="../../challenges/assets/images/banana.jpg"
-                      alt="chicken"
-                      title="chicken"
+                      alt="banana"
+                      title="banana"
                       style="width: 100px"
-                    />
-                    <figcaption>Grilled chicken</figcaption>
+                    >
+                    <figcaption>Banana</figcaption>
                   </figure>
                 </li>
               </ol>
             </li>
           </ul>
-        </section>
-        <section>
-          <aside>
-            <h3>Recipes</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, reprehenderit voluptatem dolorem consequuntur, harum a voluptatibus quis ea debitis nemo assumenda illo? Tenetur neque aliquid velit aut fuga maiores amet?</p>
-          </aside>
-        </section>
-        <footer>
-          <div>Enjoy your meal!😋</div>
-        </footer>
-      </article>
+        </article>
+      </section>
+      <!-- Recipes section -->
+      <section id="recipes">
+        <h2>Recommended recipe</h2>
+        <aside>
+          <article>
+            <h3>Recipe with pork🥩</h3>
+            <ul>
+              <li>
+                Cut a piece of pork loin into cubes and season them with salt
+                and pepper.
+              </li>
+              <li>Fry a chopped onion and a garlic clove in a pot with oil.</li>
+              <li>
+                Add the pork, a bay leaf, a teaspoon of paprika, a glass of
+                white wine and water to cover.
+              </li>
+              <li>Simmer until the pork is tender and the sauce thickens.</li>
+              <li>Serve with rice or potatoes. <em>Enjoy!</em></li>
+            </ul>
+            <video controls preload="auto" width="300">
+              <source src="../../assets/videos/pork_recipe.mp4#t=10,20">
+            </video>
+          </article>
+        </aside>
+      </section>
+      <!-- About us section -->
+      <section id="about-us">
+        <h2>About us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae ullam consequuntur minima placeat fugit sunt enim culpa doloremque cum rem voluptates sint debitis nihil, amet quidem ea, eveniet sapiente!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque pariatur cum ipsam nesciunt blanditiis ipsum, labore odio, debitis quae facere sint quos suscipit id, deleniti consectetur doloremque quibusdam repellendus!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, sapiente, aut ex iste deserunt illum ullam quis cupiditate porro nostrum sint provident quo dolorem cum tempora voluptatem fugiat. Tenetur, ullam!
+        </p>
+      </section>
+      <!-- Contact us section -->
+      <section id="form">
+        <h2>GB form</h2>
+        <form>
+          <fieldset>
+            <legend><b>Contact us</b></legend>
+            <label for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              required
+              autocomplete="name"
+              placeholder="Your name"
+            >
+            <br>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              required
+              autocomplete="email"
+              placeholder="email@example.com"
+            >
+            <br>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="colombia">Colombia</option>
+              <option value="argentina">Argentina</option>
+              <option value="brasil">Brasil</option>
+              <option value="chile">Chile</option>
+              <option value="paraguay">Paraguay</option>
+              <option value="venezuela">Venezuela</option>
+              <option value="perú">Perú</option>
+              <option value="uruguay">Uruguay</option>
+              <option value="bolivia">Bolivia</option>
+              <option value="ecuador">Ecuador</option>
+            </select>
+            <br>
+            <label for="phone-number">Phone number</label>
+            <input
+              id="phone-number"
+              type="number"
+              name="phone-number"
+              required
+              placeholder="Your personal number"
+            >
+            <br>
+            <p><b>Reason:</b></p>
+            <input
+              type="radio"
+              name="reasons"
+              id="wrong-sp"
+              value="wrong-sp"
+              checked
+            >
+            <label for="wrong-sp">Wrong shopping list</label>
+            <input
+              type="radio"
+              name="reasons"
+              id="suggestions"
+              value="suggestions"
+            >
+            <label for="suggestions">Suggestions</label>
+            <input 
+              type="radio" 
+              name="reasons" 
+              id="other" 
+              value="other"
+            >
+            <label for="other">Other</label>
+            <br>
+            <p><b>What's your favorite(s) of these?</b></p>
+            <input
+              id="chicken"
+              type="checkbox"
+              name="favorite-meats"
+              value="chicken"
+            >
+            <label for="chicken">Chicken🍗</label>
+            <input
+              id="fish"
+              type="checkbox"
+              name="favorite-meats"
+              value="fish"
+            >
+            <label for="fish">Fish🐟</label>
+            <input
+              id="pork-meat"
+              type="checkbox"
+              name="favorite-meats"
+              value="pork-meat"
+            >
+            <label for="pork-meat">Pork meat🥩</label>
+            <br>
+            <br>
+            <textarea
+              name="subject"
+              id="subject"
+              cols="50"
+              rows="10"
+              placeholder="Subject"
+            ></textarea>
+            <br>
+            <input type="submit" value="Send">
+          </fieldset>
+        </form>
+      </section>
+      <footer>
+        <div>
+          Made by
+          <a href="https://github.com/jdrodriguez2707" target="_blank">
+            <strong>Johan Rodriguez</strong>
+          </a>
+          - Platzi student💚
+        </div>
+      </footer>
     </main>
   </body>
 </html>
