@@ -1,0 +1,54 @@
+figure {
+  margin: 0;
+}
+
+* {
+  font-size: 24px;
+}
+
+.logo {
+  width: 160px;
+}
+
+h1 {
+  color: orange;
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+.sl-title {
+  color: darkgoldenrod;
+}
+
+.recipe-title {
+  color: palevioletred;
+}
+
+img {
+  width: 240px;
+}
+
+#video {
+  width: 600px;
+}
+
+#wrong-sp,
+#suggestions,
+#other,
+#chicken,
+#fish,
+#pork-meat {
+  width: 16px;
+  height: 16px;
+}
+
+.text-footer {
+  color: lightgreen;
+}

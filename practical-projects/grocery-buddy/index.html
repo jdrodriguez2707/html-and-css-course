@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Discover the best shopping lists for the supermarket"
-    >
-    <meta name="robots" content="index, follow">
+    />
+    <meta name="robots" content="index, follow" />
     <title>Grocery Buddy</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <!-- Logo -->
-      <figure style="margin: 0">
+      <figure>
         <img
           src="../../assets/images/logo.png"
           alt="logo"
           title="grocery-buddy"
-          style="width: 100px"
-        >
+          class="logo"
+        />
       </figure>
       <h1>Grocery Buddy</h1>
       <nav>
@@ -37,48 +38,45 @@
         <h2>Shopping lists</h2>
         <form>
           <label for="filter">Filter by date</label>
-          <input id="filter" type="date" name="filter">
+          <input id="filter" type="date" name="filter" />
           <button type="submit">Filter</button>
         </form>
         <article>
-          <h3>Shopping list gold 💛</h3>
+          <h3 class="sl-title">Shopping list gold💛</h3>
           <ul>
             <li>
               Meats
               <ol>
                 <li>
                   <a href="#">Chicken🍗</a>
-                  <figure style="margin: 0">
+                  <figure>
                     <img
                       src="../../challenges/assets/images/chicken.jpg"
                       alt="chicken"
                       title="chicken"
-                      style="width: 100px"
-                    >
+                    />
                     <figcaption>Grilled chicken</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Pork meat🥩</a>
-                  <figure style="margin: 0">
+                  <figure>
                     <img
                       src="../../challenges/assets/images/pork_meat.jpg"
                       alt="pork meat"
                       title="pork meat"
-                      style="width: 100px"
-                    >
+                    />
                     <figcaption>Pork meat</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Fish🐟</a>
-                  <figure style="margin: 0">
+                  <figure>
                     <img
                       src="../../challenges/assets/images/fish.jpg"
                       alt="fish"
                       title="fish"
-                      style="width: 100px"
-                    >
+                    />
                     <figcaption>Fish</figcaption>
                   </figure>
                 </li>
@@ -89,37 +87,34 @@
               <ol>
                 <li>
                   <a href="#">Onion🧅</a>
-                  <figure style="margin: 0">
+                  <figure>
                     <img
                       src="../../challenges/assets/images/onion.jpg"
                       alt="onion"
                       title="onion"
-                      style="width: 100px"
-                    >
+                    />
                     <figcaption>Onion</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Tomato🍅</a>
-                  <figure style="margin: 0">
+                  <figure>
                     <img
                       src="../../challenges/assets/images/tomato.jpg"
                       alt="tomato"
                       title="tomato"
-                      style="width: 100px"
-                    >
+                    />
                     <figcaption>Tomato</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Lettuce🥬</a>
-                  <figure style="margin: 0">
+                  <figure>
                     <img
                       src="../../challenges/assets/images/lettuce.jpg"
                       alt="lettuce"
                       title="lettuce"
-                      style="width: 100px"
-                    >
+                    />
                     <figcaption>Lettuce</figcaption>
                   </figure>
                 </li>
@@ -129,38 +124,35 @@
               Fruits
               <ol>
                 <li>
-                  <a href="#">Apple🍎</a>'
-                  <figure style="margin: 0">
+                  <a href="#">Apple🍎</a>
+                  <figure>
                     <img
                       src="../../challenges/assets/images/apple.jpg"
                       alt="apple"
                       title="apple"
-                      style="width: 100px"
-                    >
+                    />
                     <figcaption>Apple</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Pineapple🍍</a>
-                  <figure style="margin: 0">
+                  <figure>
                     <img
                       src="../../challenges/assets/images/pineapple.jpg"
                       alt="pineapple"
                       title="pineapple"
-                      style="width: 100px"
-                    >
+                    />
                     <figcaption>Pineapple</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Banana🍌</a>
-                  <figure style="margin: 0">
+                  <figure>
                     <img
                       src="../../challenges/assets/images/banana.jpg"
                       alt="banana"
                       title="banana"
-                      style="width: 100px"
-                    >
+                    />
                     <figcaption>Banana</figcaption>
                   </figure>
                 </li>
@@ -174,7 +166,7 @@
         <h2>Recommended recipe</h2>
         <aside>
           <article>
-            <h3>Recipe with pork🥩</h3>
+            <h3 class="recipe-title">Recipe with pork🥩</h3>
             <ul>
               <li>
                 Cut a piece of pork loin into cubes and season them with salt
@@ -188,8 +180,8 @@
               <li>Simmer until the pork is tender and the sauce thickens.</li>
               <li>Serve with rice or potatoes. <em>Enjoy!</em></li>
             </ul>
-            <video controls preload="auto" width="300">
-              <source src="../../assets/videos/pork_recipe.mp4#t=10,20">
+            <video controls preload="auto" id="video">
+              <source src="../../assets/videos/pork_recipe.mp4#t=10,20" />
             </video>
           </article>
         </aside>
@@ -198,13 +190,31 @@
       <section id="about-us">
         <h2>About us</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae ullam consequuntur minima placeat fugit sunt enim culpa doloremque cum rem voluptates sint debitis nihil, amet quidem ea, eveniet sapiente!
+          We are a company dedicated to facilitating the planning and saving of
+          your purchases in the supermarket. Our mission is to offer you a
+          simple and practical tool so that you can create personalized shopping
+          lists, compare prices, find offers and discounts, and access recipes
+          and ideas for your diet. Our vision is to be the leading platform in
+          the supermarket shopping list market, providing a satisfactory,
+          reliable and secure user experience. We want to help you optimize your
+          time and money, and improve your quality of life. Our values are:
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque pariatur cum ipsam nesciunt blanditiis ipsum, labore odio, debitis quae facere sint quos suscipit id, deleniti consectetur doloremque quibusdam repellendus!
+          - Innovation: We constantly seek to improve our service, incorporating
+          new features and adapting to the needs of our users.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, sapiente, aut ex iste deserunt illum ullam quis cupiditate porro nostrum sint provident quo dolorem cum tempora voluptatem fugiat. Tenetur, ullam!
+          - Quality: We guarantee a high-quality service, with updated and
+          verified information, and with an intuitive and easy-to-use design.
+        </p>
+        <p>
+          - Commitment: We are committed to our users, listening to their
+          suggestions and comments, and offering efficient and friendly
+          technical support.
+        </p>
+        <p>
+          - Responsibility: We are responsible with the environment, promoting
+          responsible and sustainable consumption, and reducing food waste.
         </p>
       </section>
       <!-- Contact us section -->
@@ -221,8 +231,8 @@
               required
               autocomplete="name"
               placeholder="Your name"
-            >
-            <br>
+            />
+            <br />
             <label for="email">Email</label>
             <input
               id="email"
@@ -231,8 +241,8 @@
               required
               autocomplete="email"
               placeholder="email@example.com"
-            >
-            <br>
+            />
+            <br />
             <label for="country">Country</label>
             <select name="country" id="country">
               <option value="colombia">Colombia</option>
@@ -246,7 +256,7 @@
               <option value="bolivia">Bolivia</option>
               <option value="ecuador">Ecuador</option>
             </select>
-            <br>
+            <br />
             <label for="phone-number">Phone number</label>
             <input
               id="phone-number"
@@ -254,8 +264,8 @@
               name="phone-number"
               required
               placeholder="Your personal number"
-            >
-            <br>
+            />
+            <br />
             <p><b>Reason:</b></p>
             <input
               type="radio"
@@ -263,47 +273,42 @@
               id="wrong-sp"
               value="wrong-sp"
               checked
-            >
+            />
             <label for="wrong-sp">Wrong shopping list</label>
             <input
               type="radio"
               name="reasons"
               id="suggestions"
               value="suggestions"
-            >
+            />
             <label for="suggestions">Suggestions</label>
-            <input 
-              type="radio" 
-              name="reasons" 
-              id="other" 
-              value="other"
-            >
+            <input type="radio" name="reasons" id="other" value="other" />
             <label for="other">Other</label>
-            <br>
+            <br />
             <p><b>What's your favorite(s) of these?</b></p>
             <input
               id="chicken"
               type="checkbox"
               name="favorite-meats"
               value="chicken"
-            >
+            />
             <label for="chicken">Chicken🍗</label>
             <input
               id="fish"
               type="checkbox"
               name="favorite-meats"
               value="fish"
-            >
+            />
             <label for="fish">Fish🐟</label>
             <input
               id="pork-meat"
               type="checkbox"
               name="favorite-meats"
               value="pork-meat"
-            >
+            />
             <label for="pork-meat">Pork meat🥩</label>
-            <br>
-            <br>
+            <br />
+            <br />
             <textarea
               name="subject"
               id="subject"
@@ -311,8 +316,8 @@
               rows="10"
               placeholder="Subject"
             ></textarea>
-            <br>
-            <input type="submit" value="Send">
+            <br />
+            <input type="submit" value="Send" />
           </fieldset>
         </form>
       </section>
@@ -322,7 +327,7 @@
           <a href="https://github.com/jdrodriguez2707" target="_blank">
             <strong>Johan Rodriguez</strong>
           </a>
-          - Platzi student💚
+          - <span class="text-footer">Platzi student</span>💚
         </div>
       </footer>
     </main>
