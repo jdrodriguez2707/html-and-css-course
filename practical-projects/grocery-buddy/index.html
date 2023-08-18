@@ -1,3 +1,4 @@
+<!-- Grocery Buddy Website -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,151 +8,160 @@
       name="description"
       content="Discover the best shopping lists for the supermarket"
     />
-    <meta name="robots" content="index, follow" />
     <title>Grocery Buddy</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <!-- Logo -->
-      <figure>
-        <img
-          src="../../assets/images/logo.png"
-          alt="logo"
-          title="grocery-buddy"
-          class="logo"
-        />
-      </figure>
-      <h1>Grocery Buddy</h1>
-      <nav>
-        <ul>
+    <header class="header">
+      <nav class="header__menu">
+        <!-- Logo -->
+        <figure class="header__logo-container">
+          <img
+            src="../../src/assets/images/logo.png"
+            alt="logo"
+            title="grocery-buddy"
+            class="header__logo"
+          />
+        </figure>
+        <h1 class="header__title">Grocery Buddy</h1>
+        <ul class="header__options">
           <li><a href="#">Home</a></li>
-          <li><a href="#shopping-list">Shopping lists</a></li>
-          <li><a href="#about-us">About us</a></li>
-          <li><a href="#form">Contact us</a></li>
+          <li><a href="#shopping-list-section">Shopping lists</a></li>
+          <li><a href="#about-us-section">About us</a></li>
+          <li><a href="#form-section">Contact us</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-content">
       <!-- Shopping list section -->
-      <section id="shopping-list">
-        <h2>Shopping lists</h2>
-        <form>
+      <section id="shopping-list-section" class="shopping-list-section">
+        <!-- <form>
           <label for="filter">Filter by date</label>
           <input id="filter" type="date" name="filter" />
           <button type="submit">Filter</button>
-        </form>
-        <article>
-          <h3 class="sl-title">Shopping list gold💛</h3>
-          <ul>
-            <li>
+        </form> -->
+        <article class="shopping-list-section__shopping-list">
+          <h2 class="section_title section_title--shopping-list-title">
+            Shopping list gold💛
+          </h2>
+          <ul class="shopping-list-section__body">
+            <li class="shopping-list-section__meats">
               Meats
               <ol>
                 <li>
                   <a href="#">Chicken🍗</a>
-                  <figure>
+                  <figure class="shopping-list-section__image-container">
                     <img
                       src="../../challenges/assets/images/chicken.jpg"
                       alt="chicken"
                       title="chicken"
+                      class="shopping-list-section__item-image"
                     />
                     <figcaption>Grilled chicken</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Pork meat🥩</a>
-                  <figure>
+                  <figure class="shopping-list-section__image-container">
                     <img
                       src="../../challenges/assets/images/pork_meat.jpg"
                       alt="pork meat"
                       title="pork meat"
+                      class="shopping-list-section__item-image"
                     />
                     <figcaption>Pork meat</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Fish🐟</a>
-                  <figure>
+                  <figure class="shopping-list-section__image-container">
                     <img
                       src="../../challenges/assets/images/fish.jpg"
                       alt="fish"
                       title="fish"
+                      class="shopping-list-section__item-image"
                     />
                     <figcaption>Fish</figcaption>
                   </figure>
                 </li>
               </ol>
             </li>
-            <li>
+            <li class="shopping-list__vegetables">
               Vegetables
               <ol>
                 <li>
                   <a href="#">Onion🧅</a>
-                  <figure>
+                  <figure class="shopping-list-section__image-container">
                     <img
                       src="../../challenges/assets/images/onion.jpg"
                       alt="onion"
                       title="onion"
+                      class="shopping-list-section__item-image"
                     />
                     <figcaption>Onion</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Tomato🍅</a>
-                  <figure>
+                  <figure class="shopping-list-section__image-container">
                     <img
                       src="../../challenges/assets/images/tomato.jpg"
                       alt="tomato"
                       title="tomato"
+                      class="shopping-list-section__item-image"
                     />
                     <figcaption>Tomato</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Lettuce🥬</a>
-                  <figure>
+                  <figure class="shopping-list-section__image-container">
                     <img
                       src="../../challenges/assets/images/lettuce.jpg"
                       alt="lettuce"
                       title="lettuce"
+                      class="shopping-list-section__item-image"
                     />
                     <figcaption>Lettuce</figcaption>
                   </figure>
                 </li>
               </ol>
             </li>
-            <li>
+            <li class="shopping-list__fruits">
               Fruits
               <ol>
                 <li>
                   <a href="#">Apple🍎</a>
-                  <figure>
+                  <figure class="shopping-list-section__image-container">
                     <img
                       src="../../challenges/assets/images/apple.jpg"
                       alt="apple"
                       title="apple"
+                      class="shopping-list-section__item-image"
                     />
                     <figcaption>Apple</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Pineapple🍍</a>
-                  <figure>
+                  <figure class="shopping-list-section__image-container">
                     <img
                       src="../../challenges/assets/images/pineapple.jpg"
                       alt="pineapple"
                       title="pineapple"
+                      class="shopping-list-section__item-image"
                     />
                     <figcaption>Pineapple</figcaption>
                   </figure>
                 </li>
                 <li>
                   <a href="#">Banana🍌</a>
-                  <figure>
+                  <figure class="shopping-list-section__image-container">
                     <img
                       src="../../challenges/assets/images/banana.jpg"
                       alt="banana"
                       title="banana"
+                      class="shopping-list-section__item-image"
                     />
                     <figcaption>Banana</figcaption>
                   </figure>
@@ -162,11 +172,13 @@
         </article>
       </section>
       <!-- Recipes section -->
-      <section id="recipes">
-        <h2>Recommended recipe</h2>
+      <section id="recipes-section" class="recommended-recipe-section">
+        <h2 class="section-title">Recommended recipe</h2>
         <aside>
           <article>
-            <h3 class="recipe-title">Recipe with pork🥩</h3>
+            <h3 class="recommended-recipe-section__subtitle">
+              Recipe with pork🥩
+            </h3>
             <ul>
               <li>
                 Cut a piece of pork loin into cubes and season them with salt
@@ -180,15 +192,20 @@
               <li>Simmer until the pork is tender and the sauce thickens.</li>
               <li>Serve with rice or potatoes. <em>Enjoy!</em></li>
             </ul>
-            <video controls preload="auto" id="video">
-              <source src="../../assets/videos/pork_recipe.mp4#t=10,20" />
+            <video
+              controls
+              preload="auto"
+              id="video"
+              class="recommended-recipe-section__video"
+            >
+              <source src="../../src/assets/videos/pork_recipe.mp4#t=10,20" />
             </video>
           </article>
         </aside>
       </section>
       <!-- About us section -->
-      <section id="about-us">
-        <h2>About us</h2>
+      <section id="about-us-section" class="about-us-section">
+        <h2 class="section-title">About us</h2>
         <p>
           We are a company dedicated to facilitating the planning and saving of
           your purchases in the supermarket. Our mission is to offer you a
@@ -218,8 +235,8 @@
         </p>
       </section>
       <!-- Contact us section -->
-      <section id="form">
-        <h2>GB form</h2>
+      <section id="form-section" class="gb-form-section">
+        <h2 class="section-title">GB form</h2>
         <form>
           <fieldset>
             <legend><b>Contact us</b></legend>
@@ -231,6 +248,7 @@
               required
               autocomplete="name"
               placeholder="Your name"
+              class="gb-form-section__input"
             />
             <br />
             <label for="email">Email</label>
@@ -241,10 +259,11 @@
               required
               autocomplete="email"
               placeholder="email@example.com"
+              class="gb-form-section__input"
             />
             <br />
             <label for="country">Country</label>
-            <select name="country" id="country">
+            <select name="country" id="country" class="gb-form-section__input">
               <option value="colombia">Colombia</option>
               <option value="argentina">Argentina</option>
               <option value="brasil">Brasil</option>
@@ -264,6 +283,7 @@
               name="phone-number"
               required
               placeholder="Your personal number"
+              class="gb-form-section__input"
             />
             <br />
             <p><b>Reason:</b></p>
@@ -315,19 +335,24 @@
               cols="50"
               rows="10"
               placeholder="Subject"
+              class="gb-form-section__input"
             ></textarea>
             <br />
-            <input type="submit" value="Send" />
+            <input type="submit" value="Send" class="gb-form-section__input" />
           </fieldset>
         </form>
       </section>
-      <footer>
-        <div>
-          Made by
-          <a href="https://github.com/jdrodriguez2707" target="_blank">
-            <strong>Johan Rodriguez</strong>
-          </a>
-          - <span class="text-footer">Platzi student</span>💚
+      <footer class="footer">
+        <div class="footer__content">
+          <p class="footer__text">
+            Made by
+            <a href="https://github.com/jdrodriguez2707" target="_blank">
+              <strong>Johan Rodriguez</strong>
+            </a>
+            -
+            <span class="footer__text footer__text--green">Platzi student</span
+            >💚
+          </p>
         </div>
       </footer>
     </main>

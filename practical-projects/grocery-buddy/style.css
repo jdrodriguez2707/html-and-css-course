@@ -1,54 +1,52 @@
-figure {
+/* Header styles */
+.header__logo-container {
   margin: 0;
 }
 
-* {
-  font-size: 24px;
-}
-
-.logo {
+.header__logo {
   width: 160px;
 }
 
-h1 {
+.header__title {
   color: orange;
   font-size: 52px;
 }
 
-h2 {
+.header__options {
+  font-size: 28px;
+}
+
+/* Main content styles */
+.main-content {
+  font-size: 24px;
+}
+
+.section-title {
   font-size: 42px;
 }
 
-h3 {
-  font-size: 32px;
-}
-
-.sl-title {
+.section_title--shopping-list-title {
   color: darkgoldenrod;
 }
 
-.recipe-title {
-  color: palevioletred;
-}
-
-img {
+.shopping-list-section__item-image {
   width: 240px;
 }
 
-#video {
+.recommended-recipe-section__subtitle {
+  color: palevioletred;
+  font-size: 32px;
+}
+
+.recommended-recipe-section__video {
   width: 600px;
 }
 
-#wrong-sp,
-#suggestions,
-#other,
-#chicken,
-#fish,
-#pork-meat {
-  width: 16px;
-  height: 16px;
+.gb-form-section__input {
+  font-size: 20px;
 }
 
-.text-footer {
+/* Footer styles */
+.footer__text--green {
   color: lightgreen;
 }
