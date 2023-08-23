@@ -1,0 +1,35 @@
+.main-nav {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+  background-color: aqua;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
+
+.main-nav__item a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  /* border-radius: 2px; */
+}
+
+/* Pseudo-classes: Se usan para cambiar estados de un elemento como cuando se pasa el cursos por encima */
+.main-nav__item a:hover {
+  color: red;
+}
+
+.main-nav__item a:active {
+  color: blue;
+}
+
+/* Pseudo-elements: Se usan para cambiar alguna parte específica de un elemento como cuando queremos agregar algo de contenido despues de dicho elemento */
+.main-nav__item a::after {
+  content: " | ";
+}
+
+.main-nav__item a::before {
+  content: "🟢";
+}
