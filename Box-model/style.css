@@ -1,0 +1,15 @@
+/* Es recomendado tener esto siempre en nuestras hojas de estilo para no tener problemas con el margin, padding o el tamaño de las cajas */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+main {
+  width: 100%;
+  height: 500px;
+  border: 10px solid black;
+  padding: 20px 35px;
+  background-color: palevioletred;
+}

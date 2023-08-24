@@ -13,12 +13,12 @@
 }
 
 .header__options {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 /* Main content styles */
 .main-content {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .section-title {
@@ -40,10 +40,6 @@
 
 .recommended-recipe-section__video {
   width: 600px;
-}
-
-.gb-form-section__input {
-  font-size: 20px;
 }
 
 /* Footer styles */
