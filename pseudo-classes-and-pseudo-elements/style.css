@@ -1,0 +1,39 @@
+.main-nav {
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+  background-color: aqua;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: white;
+  /* padding: 5px; */
+}
+
+.main-nav__item {
+  display: inline-block;
+  padding: 5px;
+  /* border-radius: 5px;
+  background-color: red; */
+}
+
+/* Pseudo-classes */
+
+.main-nav__item a:hover {
+  color: greenyellow;
+}
+
+.main-nav__item a:active {
+  color: black;
+}
+
+/* Pseudo-elements */
+
+.main-nav__item a::after {
+  content: " | ";
+}
+
+.main-nav__item a::before {
+  content: "🟢 ";
+}
