@@ -1,10 +1,10 @@
 /* Es recomendado tener esto siempre en nuestras hojas de estilo para no tener problemas con el margin, padding o el tamaño de las cajas */
 
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
 
 main {
   width: 100%;
