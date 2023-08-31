@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select</title>
+  </head>
+  <body>
+    <main>
+      <h1>Select (two ways to do it)</h1>
+      <form>
+        <fieldset>
+          <legend>
+            <i><b>First way</b></i>
+          </legend>
+          <select name="web-standards" id="web-standards" required>
+            <option value="">Web standards</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+          </select>
+          <input type="submit" value="Send" />
+        </fieldset>
+      </form>
+      <form>
+        <fieldset>
+          <legend>
+            <i><b>Second way</b></i>
+          </legend>
+          <input
+            list="programming-languages"
+            name="programming-languages"
+            required
+          />
+          <datalist id="programming-languages">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JavaScript"></option>
+          </datalist>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
