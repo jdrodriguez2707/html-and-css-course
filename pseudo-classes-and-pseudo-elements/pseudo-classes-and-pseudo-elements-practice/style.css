@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  background-color: #000000;
+  font-family: fantasy;
+  font-size: 24px;
+  padding: 8px;
+}
+
+.main-header__nav {
+  margin-top: 5px;
+}
+
+.main-header__list {
+  list-style: none;
+}
+
+.main-header__item {
+  display: inline-block;
+  margin: 4px;
+}
+
+.main-header__link {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #000000;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.main-header__link--black {
+  background-color: #000000;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.main-header__link:hover {
+  color: #ffffff;
+}
+
+.main-header__link--black:hover {
+  border: 1px dashed #ff0000;
+  color: #ff0000;
+}
+
+.main-header__link:active {
+  color: #ffff00;
+}
+
+.main-header__list::after,
+.main-header__list::before {
+  content: " | ";
+  color: #ffffff;
+}
