@@ -1,0 +1,5 @@
+/* Este combinador sirve para seleccionar todos los hermanos dentro del mismo elemento padre de forma general, es decir no solo va a seleccionar a un hermano si no a todos los que le siguen al elemento */
+
+h2 ~ p {
+  color: #ff0000;
+}

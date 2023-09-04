@@ -1,0 +1,5 @@
+/* Este es parecido al Child combinator, pero aplicará el estilo a todos los elementos hijos de forma general, es decir sin importar que estén dentro de otro contenedor; solo basta con que estén dentro del elemento padre más grande que estamos seleccionando */
+
+.container p {
+  color: #ff0000;
+}

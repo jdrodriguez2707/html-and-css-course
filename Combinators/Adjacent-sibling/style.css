@@ -1,0 +1,5 @@
+/* Este tipo de combinador nos permite seleccionar dentro de un elemento padre solo el primer elemento que está después de algún otro elemento */
+
+h2 + p {
+  color: #ff0000;
+}

@@ -1,0 +1,9 @@
+/* Este combinador nos permite seleccionar un elemento a partir de su elemento padre */
+
+article > p {
+  color: #ff0000;
+}
+
+div > p {
+  color: #0000ff;
+}
