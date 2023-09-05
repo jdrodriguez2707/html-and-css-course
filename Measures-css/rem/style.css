@@ -1,0 +1,25 @@
+/* rem siempre tendrá la misma medida que el elemento html */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* 
+  (10 / 16) * 100 = 62.5
+  10 = medida que queremos usar como referencia para rem
+  16 = medida actual del elemento html que usa como referencia rem
+  100 = 100% del tamaño
+  */
+}
+
+main div {
+  font-size: 20px;
+}
+
+p {
+  font-size: 1.6rem;
+}
