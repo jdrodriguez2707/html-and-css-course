@@ -1,0 +1,15 @@
+/* 1em es igual a la medida de su contenedor padre directo */
+
+/* body {
+  font-size: 20px;
+} */
+
+.text-container {
+  font-size: 1.5em;
+  /* 1.5 * 16px = 24px */
+}
+
+.text-container div {
+  font-size: 1.5em;
+  /* 1.5 * 24 = 36px */
+}
