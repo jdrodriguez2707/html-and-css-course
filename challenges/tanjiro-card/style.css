@@ -1,5 +1,11 @@
-/* Fonts */
+/* Reset browser measurements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* Fonts */
 @font-face {
   font-family: 'Blood Crow Expanded Italic';
   src: url(./assets/fonts/bloodcrowei.ttf);
@@ -10,60 +16,65 @@
   src: url(./assets/fonts/bloodcrowc.ttf);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Font-size = 10px */
 html {
   font-size: 62.5%;
 }
 
+/* Background */
 body {
   background-image: url(./assets/images/background.jpg);
+  /* So that the image takes up the entire size of the container */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
-.container {
+/* Card container */
+.card {
   background-image: url(./assets/images/tanjiro.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 44.8rem;
   height: 53.6rem;
-  background-color: #000000;
-  border-radius: 50px;
-  border: 1px solid #000000a4;
-  position: relative;
-  top: 100px;
-  left: 200px;
-  font-size: 2rem;
-  box-shadow: 2px 4px 10px #000000;
+  /* background-color: #000000; */
+  border-radius: 48px;
+  border: 2px groove #000000;
+  position: absolute;
+  top: 24vh;
+  left: 12vw;
 }
 
-.container__box {
+/* Card title */
+.card__title {
   background-image: url(./assets/images/fire-background.jpg);
+  /* So that the bottom part of the image appears */
   background-position: bottom;
   background-repeat: no-repeat;
   width: 26.4rem; 
   height: 6.8rem; 
   border: 4px double #000000;
-  border-radius: 60px; 
+  border-radius: 48px; 
   position: absolute; 
   top: -3.4rem; 
   left: 9.2rem; 
+  font-family: 'Blood Crow Expanded Italic', 'Arial';
+  font-size: 2rem;
+  /* Center text */
   text-align: center;
   padding-top: 1.6rem; 
-  font-family: 'Blood Crow Expanded Italic', 'Arial';
 }
 
-.container__footer {
+/* Card footer */
+.card__footer {
   position: absolute;
   left: 10.3rem;
-  bottom: 2.8rem;
+  bottom: 4.8rem;
   color: #000000;
   font-family: 'Blood Crow Condensed', 'Arial';
   font-size: 2.8rem;
+}
+
+.card__footer::after {
+  content: " 💧 🔥"
 }
