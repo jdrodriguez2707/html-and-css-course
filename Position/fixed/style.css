@@ -1,0 +1,40 @@
+/* Position fixed funciona similar a absolute, pero con fixed el elemento se mantiene en su posición incluso si hacemos scroll */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #333;
+  font-size: 1.6rem;
+  color: #ffffff
+}
+
+.header {
+  background-color: #87cefa;
+  padding: 25px;
+  text-align: center;
+  color: #000000;
+  position: fixed;
+  width: 100%;
+}
+
+h1 {
+  padding-top: 90px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
