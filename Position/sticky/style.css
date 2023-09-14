@@ -1,0 +1,59 @@
+/* Position sticky lo que hace es dejar un elemento posicionado aunque hagamos scroll, hasta que recorra todo el alto o contenido de su contenedor padre. Es decir, cuando ya hemos hecho scroll por todo el contenido del elemento padre, ya no se va a quedar fijo. Con position sticky podemos usar las propiedades top, bottom, left y right como punto de referencia para que el elemento se quede pegado en su posición aunque hagamos scroll */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #333;
+  font-size: 1.6rem;
+  color: #ffffff
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+.main-header {
+  background-color: #87cefa;
+  padding: 25px;
+  text-align: center;
+  color: #000000;
+  /* width: 100%; */
+  height: 200px;
+}
+
+.main-header__menu {
+  position: sticky;
+  top: 0;
+}
+
+/* position sticky lo que hará será mantener el elemento arriba del todo, porque pusimos top: 0, mientras que hagamos scroll durante 200px de alto  */
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section {
+  outline: 3px solid #ff0000;
+}
+
+.section__title {
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  margin: 0;
+}
+
+.section__body {
+  margin-bottom: 20px;
+}
+
