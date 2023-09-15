@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box--one {
+  background-color: #f08080;
+  position: relative;
+  border-radius: 50px;
+  left: 100px;
+  top: 100px;
+}
+
+.box--two {
+  background-color: #90ee90;
+  position: relative;
+}
