@@ -1,0 +1,70 @@
+/* Para que el hijo se coloque detrás del padre se necesita poner z-index negativo al hijo y que el padre no tengo z-index declarado o z-index: auto */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #333;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: lightskyblue;
+  position: relative;
+  /* margin-left: 100px; */
+  z-index: auto;
+}
+
+.box-1 {
+  background-color: #f08080;
+  position: relative;
+  left: 150px;
+  z-index: -1;
+  top: -30px;
+  /* right: 0;
+  bottom: 0; */
+}
+
+.box-1-2 {
+  background-color: #7fffd4;
+  position: relative;
+  left: 150px;
+  z-index: -1;
+}
+
+.box-2 {
+  background-color: #90ee90;
+  position: relative;
+  top: 50px;
+  /* bottom: 0;
+  right: 0; */
+  z-index: 20;
+}
+
+.box-3 {
+  background-color: #000000;
+  position: relative;
+  left: 5px;
+  bottom: 45px;
+  /* top: 25px; */
+  z-index: 10;
+}
+
+/* .box-4 {
+  background-color: #f48804;
+  position: relative;
+} */
