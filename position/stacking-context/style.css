@@ -1,0 +1,65 @@
+/* 
+  Orden de apilamiento:
+  1. Elementos con z-index en 1 o más
+  2. Elementos posicionados sin z-index declarado o z-index: auto
+  3. Elementos no posicionados
+  4. Elementos con z-index negativo
+
+  Si tenemos un contenedor con elementos adentro, ahí se crea otro stacking context. Si aplicamos la propiedad opacity con un valor menor a 1 a un contenedor entonces ahí se estaría creando un stacking context distinto para los elementos que están dentro de dicho contenedor y no tendrán nada que ver con los elementos de afuera con respecto al orden de apilamiento.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.box--1 {
+  background-color: #00ffea;
+  position: relative;
+  z-index: 1;
+}
+
+.box--2 {
+  background-color: #05ff01;
+  margin-top: -25px;
+}
+
+.box--3 {
+  background-color: #dd00ff;
+  margin-top: -25px;
+  position: relative;
+  z-index: -1;
+}
+
+.container {
+  background-color: #deb887;
+  margin-bottom: 10px;
+  margin-top: -30px;
+  position: relative;
+}
+
+.container__title {
+  position: relative;
+  font-size: 3.2rem;
+  background-color: salmon;
+  z-index: 10;
+  opacity: 0.75;
+}
+
+.container__text {
+  font-size: 1.2rem;
+  margin-top: -20px;
+}
