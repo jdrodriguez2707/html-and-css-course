@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.card {
+  background-color: #e0dce0;
+  width: 60rem;
+  height: auto;
+  position: relative;
+  margin: 25vh auto;
+  border: 1px solid #69696b;
+  border-radius: 40px;
+  font-size: 2rem;
+}
+
+.card__title {
+  background-color: #ff0000;
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  position: absolute;
+  left: 25%;
+  top: -48px;
+  padding: 3.6rem 0;
+  text-align: center;
+}
+
+.card__text {
+  margin: 10rem 8rem;
+}
