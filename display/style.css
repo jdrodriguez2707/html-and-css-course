@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+.block-element {
+  background-color: #dc143c;
+  /* width: 200px;
+  height: 200px; */
+  margin: 10px;
+  padding: 20px;
+}
+
+.span {
+  /* Al los elementos en linea no se le puede aplicar margin top ni bottom. Solo funciona margin right o left */
+  /* margin-top: 100px; */
+  margin: 10px;
+  /* Tampoco se le puede agregar width o height */
+  /* width: 100px;
+  height: 100px; */
+}
+
+.nav {
+  background-color: #6495ed;
+  margin: 10px;
+  padding: 20px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav > li {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
