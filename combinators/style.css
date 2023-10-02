@@ -1,15 +1,15 @@
-/* h2 + p {
-  color: red;
-} */
+div p {
+  color: blue;
+}
 
-/* h2 ~ p {
+div > p {
   color: red;
-} */
+}
 
-/* div > h2 {
-  color: red;
-} */
+h2 + p {
+  color: yellow;
+}
 
-div h2 {
-  color: red;
+h2 ~ p {
+  color: orange;
 }
