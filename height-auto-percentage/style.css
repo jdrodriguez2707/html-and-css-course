@@ -1,0 +1,55 @@
+/* Es recomendable dejar que sea el contenido el que determine el alto de un elemento */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #333;
+  color: #d87093;
+  font-size: 1.6rem;
+}
+
+/* 
+.container {
+  width: auto;
+  height auto es lo mismo que no poner nada 
+  height: auto;
+  padding-bottom: 30px;
+  margin: 0 24px;
+  background-color: #90ee90;
+  margin-top: 16px;
+}
+
+.box {
+  width: 50%;
+  height: 100%; 
+  margin-left: 40px; 
+  background-color: #ffb6c1;
+} 
+*/
+
+.container {
+  /* position: absolute; */
+  width: auto;
+  height: auto;
+  /* padding-bottom: 20px; */
+  margin: 0 24px;
+  background-color: #90ee90;
+  margin-top: 16px;
+}
+
+.box {
+  /* position: absolute; */
+  /* width: 50%; */
+  /* height: 50%; */
+  /* height: 50%; */
+  /* margin-left: 40px; */
+  background-color: #ffb6c1;
+}
