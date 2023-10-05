@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 0 1 23%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin-bottom: 2%;
+}
+
+.item:nth-child(even) {
+  background-color: #00ffff;
+}

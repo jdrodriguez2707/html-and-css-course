@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4682b4;
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  width: 90%;
+  height: 400px;
+  background-color: #add8e6;
+  margin: auto;
+  display: flex;
+}
+
+.flex-item {
+  background-color: #ff2600;
+  color: #fff;
+  /* flex basis es relativo al eje principal y al aplicarse al elemento este ignora el width o height que tenga declarado según cuál sea el eje principal  */
+  /* flex-basis: 100px; */
+  /* El número de flex-glow es el factor de crecimiento */
+  /* 
+    Espacio disponible: 100px
+    Espacio ocupado: 400px;
+    flex-grow en total: 4 (1 * 4 elementos)
+    Unidad de crecimiento entre el total de los flex-grow de los 4 elementos es de:
+    100 / 4 = 25px 
+  */
+  /* flex-grow: 1; */
+
+  /* 
+    Espacio disponible: -300px
+    Espacio ocupado: 800px;
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-basis: 25%; */
+  /* margin: 10px; */
+  /* flex-shrink funciona igual que flex-grow pero al revés, es decir para controlar cómo se reducen de tamaño los items. Por default tiene el valor de 1 */
+  /* flex-shrink: 1;  */
+}
+
+.flex-item:nth-child(even) {
+  background-color: #0b925c;
+}
+
+.flex-item:nth-child(1) {
+  flex: 25;
+}
+
+.flex-item:nth-child(2) {
+  /* 
+    Unidad de crecimiento entre lo 4 elementos es de:
+    100 / 5 (total de cada flex-grow de cada item) = 20px 
+  */
+  /* flex-grow: 2; */
+  /* Unidad de decremento entre lo 4 elementos es de:
+    -300px (espacio disponible) / 5 (total de cada flex-shrink de cada item) = -60px  */
+    /* 
+      2 (factor de decremento) * -60px (unidad de decremento) = -120px
+      200px (tamaño del elemento) - 120px = 80px (lo que medirá el elemento ahora)
+    */
+  /* flex-shrink: 2; */
+  flex: 20;
+}
+
+.flex-item:nth-child(3) {
+  flex: 45;
+}
+
+.flex-item:nth-child(4) {
+  flex: 10;
+}
+
+
+
+/* 
+
+- Existe un espacio ocupado y un espacio disponible en el main size (default: width) Si existe margin en los elementos, también se incluye como espacio ocupado. 
+
+- Los margenes nunca se colpasan con flexbox, es decir aunque las cajas reduzcan su tamaño por falta de espacio, los margenes de esas cajas seguirán iguales.
+
+- Aunque el main size sea mayor que el contenedor, no se va a desbordar. Si no que se reducirá de tamaño para que ocupe como máximo el 100% de su contenedor
+
+Predeterminado 
+flex: 0 1 auto;
+el primer valor es flex-grow, el segundo flex-shrink y el tercero flex-basis.
+
+flex: none; == flex: 0 0 auto;
+flex: auto; == flex: 1 1 auto;
+flex: N; == flex: N 1 0;  
+
+cuando flex-basis es auto, sí se le puede agregar width o height según el caso
+
+*/
+
+
+
