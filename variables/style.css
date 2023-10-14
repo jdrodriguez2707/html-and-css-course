@@ -1,0 +1,39 @@
+/* https://lenguajecss.com/css/cascada-css/css-custom-properties/#definir-una-variable-css */
+
+:root {
+  --primary-background-color: #00006c;
+  --secondary-background-color: #7fffd4;
+  --header-font-size: 4rem;
+  --global-font-size: 1.8rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  height: 15vh;
+  /* var puede recibir un valor por defecto en caso de que no encuentre la variable */
+  background-color: var(--primary-background-color, blue); 
+}
+
+main {
+  height: 70vh;
+  font-size: var(--global-font-size);
+}
+
+h1 {
+  color: var(--primary-background-color, blue);
+  font-size: var(--header-font-size);
+}
+
+footer {
+  height: 15vh;
+  background-color: var(--secondary-background-color, lightblue);
+}
