@@ -3,3 +3,4 @@ assets
 *.Identifier
 *.jpg
 *.png
+/web-fonts/fonts

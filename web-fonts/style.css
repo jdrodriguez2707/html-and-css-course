@@ -1,0 +1,32 @@
+/* No es buena práctica usar @import para importar fuentes, ya que afecta directamente al rendimiento de nuestro sitio web, es mejor importarlas desde el HTML con la etiqueta link */
+/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap'); */
+
+/* Se recomienda una o dos fuentes personalizadas como mucho, para evitar lentitud en el sitio web */
+
+/* Así se pueden usar fuentes que tengas localmente en el proyecto. De esta manera tenemos más control sobre la fuente */
+
+@font-face {
+  font-family: "Nabla";
+  src: url("./fonts/Nabla/static/Nabla-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 4rem;
+}
+
+p {
+  /* font-family: "Bungee Spice", sans-serif; */
+  font-family: "Nabla", sans-serif;
+}
