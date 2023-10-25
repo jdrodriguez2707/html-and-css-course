@@ -1,0 +1,23 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap'); */
+
+@font-face {
+  font-family: "Nabla";
+  src: url("./fonts/Nabla/static/Nabla-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Nabla", sans-serif;
+}
