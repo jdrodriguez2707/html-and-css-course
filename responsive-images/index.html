@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive images</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- picture nos permite poner varias imágenes para que el navegador pueda decidir cuál usar dependiendo del tamaño del dispositivo y así mejorar el rendimiento -->
+    <picture>
+      <!-- Se colocan primero las de mayor width -->
+      <source media="(min-width: 1300px)" srcset="./images/large.jpg" />
+      <!-- El atributo srcset se encarga de modificar el src de la etiqueta img según le convenga -->
+      <source media="(min-width: 1000px)" srcset="./images/medium.jpg" />
+      <img src="./images/small.jpg" alt="an imagen about the nature" />
+    </picture>
+  </body>
+</html>
