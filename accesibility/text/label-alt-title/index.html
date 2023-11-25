@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accesibility | label, alt and title</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form>
+      <!-- label también nos ayuda para la accesibilidad porque si presionamos el label nos va a enfocar el input correspondiente para llenarlo -->
+      <label for="name">
+        <span>What's your name?</span>
+      </label>
+      <input id="name" type="text" />
+
+      <label for="initial-date-platzi">
+        <span>What day did you start to study on Platzi?</span>
+      </label>
+      <input id="initial-date-platzi" type="date" />
+
+      <label for="study-schedule">
+        <span>What time do you study on Platzi?</span>
+      </label>
+      <input id="study-schedule" type="time" />
+    </form>
+
+    <!-- Si hay un usuario con problemas visuales y usa un software para poder escuhar lo que muestra nuestro sitio web, es recomendable usar alt en las imágenes para indicarle a dicho software qué es lo que está ahí puesto y así el usuario, aunque no pueda ver, podrá saberlo y navegar -->
+  </body>
+</html>
