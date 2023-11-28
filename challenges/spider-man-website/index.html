@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#ff0000" />
     <title>Marvel's Spider-Man 2</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
-      href="./mini-tablet.css"
+      href="./css/mini-tablet.css"
       media="screen and (min-width: 600px)"
     />
     <link
       rel="stylesheet"
-      href="./tablet.css"
+      href="./css/tablet.css"
       media="screen and (min-width: 800px)"
     />
     <link
       rel="stylesheet"
-      href="./laptop.css"
+      href="./css/laptop.css"
       media="screen and (min-width: 1200px)"
     />
     <link
       rel="stylesheet"
-      href="./desktop.css"
+      href="./css/desktop.css"
       media="screen and (min-width: 1600px)"
     />
 
@@ -31,7 +31,7 @@
     <link
       rel="icon"
       type="image/jpg"
-      href="https://i.ibb.co/G07115M/spider-man-icon.jpg"
+      href="./assets/images/spider-man-icon.jpg"
     />
 
     <!-- Fonts -->
@@ -54,11 +54,11 @@
         <div>
           <!-- Menu icon -->
           <svg
+            class="navbar__menu-icon"
             xmlns="http://www.w3.org/2000/svg"
             height="24"
             viewBox="0 -960 960 960"
             width="24"
-            class="navbar__menu-icon"
           >
             <path
               d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
@@ -109,7 +109,8 @@
           <img
             class="navbar__logo"
             src="./assets/images/marvels-spider-man-2-logo.webp"
-            alt="marvels-spider-man-2-logo"
+            alt="Marvel's Spider-Man logo"
+            title="Spider-Man logo"
           />
         </figure>
         <nav class="navbar__options">
@@ -132,12 +133,20 @@
     <main>
       <section class="banner-container">
         <figure>
-          <video autoplay muted loop class="game-video">
+          <video id="banner-video" class="game-video" autoplay muted loop>
             <source
               src="./assets/videos/spider-man-2-video-hero-banner-desktop.mp4"
             />
           </video>
         </figure>
+        <!-- Prevenir el menú del clic derecho del video -->
+        <script>
+          document
+            .getElementById("banner-video")
+            .addEventListener("contextmenu", function (e) {
+              e.preventDefault();
+            });
+        </script>
         <div class="game">
           <div class="game__info-container">
             <header>
@@ -171,36 +180,40 @@
       <section id="media" class="media">
         <figure class="media-container">
           <img
+            class="media-container__img"
             src="./assets/images/spider-man-2-screenshot-story-duo-4k-legal.webp"
-            alt="spider-man-2-story-duo"
             loading="lazy"
-            class="media-container__img"
+            alt="Marvel's Spider-Man 2 duo"
+            title="Spider-Man duo"
           />
           <img
+            class="media-container__img"
             src="./assets/images/spider-man-2-reveal-venom-4K-legal.webp"
-            alt="spider-man-2-screenshot-story-duo-4k-legal"
             loading="lazy"
-            class="media-container__img"
+            alt="Villain Venom in Marvel's Spider-Man 2"
+            title="Villain Venom"
           />
           <img
+            class="media-container__img"
             src="./assets/images/spider-man-2-screenshot-miles-enhanced-venom.webp"
-            alt="spider-man-2-screenshot-venom-4k-legal"
             loading="lazy"
-            class="media-container__img"
+            alt="Miles Morales enhanced"
+            title="Miles Morales"
           />
           <img
-            src="./assets/images/spider-man-2-screenshot-symbiote-4k-legal.webp"
-            alt="spider-man-2-screenshot-symbionte-4k-legal"
-            loading="lazy"
             class="media-container__img"
+            src="./assets/images/spider-man-2-screenshot-symbiote-4k-legal.webp"
+            loading="lazy"
+            alt="Spider-Man with symbiote"
+            title="Symbiote"
           />
           <div class="video-container">
             <iframe
+              class="media-container__video"
               src="https://www.youtube.com/embed/ZRhJT2nmvA4"
               title="Marvel&#39;s Spider-Man 2 - Gameplay Reveal | PS5 Games"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
-              class="media-container__video"
             >
             </iframe>
           </div>
@@ -237,10 +250,11 @@
         <div class="features__container">
           <figure class="features__media">
             <img
-              src="./assets/images/marvels-spiderman-2-key-features-carousel-symbiote.webp"
-              alt="marvels-spiderman-2-key-features-carousel-symbiote"
-              loading="lazy"
               class="features__image"
+              src="./assets/images/marvels-spiderman-2-key-features-carousel-symbiote.webp"
+              loading="lazy"
+              alt="Spider-Man with symbiote in the carousel"
+              title="Symbiote in a carousel"
             />
             <figcaption class="features__image-caption">
               <h3 class="features__subtitle">
@@ -256,10 +270,11 @@
           </figure>
           <figure class="features__media">
             <img
-              src="./assets/images/marvels-spiderman-2-key-features-carousel-two-spidermen.webp"
-              alt="marvels-spiderman-2-key-features-carousel-two-spidermen"
-              loading="lazy"
               class="features__image"
+              src="./assets/images/marvels-spiderman-2-key-features-carousel-two-spidermen.webp"
+              loading="lazy"
+              alt="Spider-men in the carousel"
+              title="Spider-men in a carousel"
             />
             <figcaption class="features__image-caption">
               <h3 class="features__subtitle">
@@ -273,10 +288,11 @@
           </figure>
           <figure class="features__media">
             <img
-              src="./assets/images/marvels-spiderman-2-key-features-carousel-venom.webp"
-              alt="marvels-spiderman-2-key-features-carousel-venom"
-              loading="lazy"
               class="features__image features__image--big"
+              src="./assets/images/marvels-spiderman-2-key-features-carousel-venom.webp"
+              loading="lazy"
+              alt="Villain venom in the carousel"
+              title="Venom in a carousel"
             />
             <figcaption class="features__image-caption">
               <h3 class="features__subtitle">
@@ -291,10 +307,11 @@
           </figure>
           <figure class="features__media">
             <img
-              src="https://i.ibb.co/Tr7RvRC/marvels-spiderman-2-key-features-carousel-coney-island.webp"
-              alt="marvels-spiderman-2-key-features-carousel-coney-island"
-              loading="lazy"
               class="features__image"
+              src="./assets/images/marvels-spiderman-2-key-features-carousel-coney-island.webp"
+              loading="lazy"
+              alt="A carousel in Coney Island"
+              title="A carousel"
             />
             <figcaption class="features__image-caption">
               <h3 class="features__subtitle">
@@ -311,15 +328,14 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="my-github">
       <small>
         Built by
         <a
-          role="button"
+          class="my-github__link"
           href="https://github.com/jdrodriguez2707"
           target="_blank"
           rel="noreferrer"
-          class="footer__link"
           >Johan Rodriguez</a
         >
         💚

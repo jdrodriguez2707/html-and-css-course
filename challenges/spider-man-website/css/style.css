@@ -40,7 +40,7 @@ html {
   background-color: #0070cc;
   border-radius: 20px;
   padding: 5px;
-  width: 80px;
+  width: 8rem;
   color: #ffffff;
   font-family: var(--text-font-family);
   font-weight: bold;
@@ -200,7 +200,7 @@ html {
 
 .overview {
   position: relative;
-  background-image: url(./assets/images/Marvels-spider-man-2-page-banner-desktop-miles-and-peter.webp);
+  background-image: url(../assets/images/Marvels-spider-man-2-page-banner-desktop-miles-and-peter.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -292,7 +292,7 @@ html {
   font-size: 1.5rem;
 }
 
-.footer {
+.my-github {
   background-color: var(--secondary-background-color);
   color: #ffffff;
   text-align: center;
@@ -300,6 +300,6 @@ html {
   padding-bottom: 5vh;
 }
 
-.footer__link {
+.my-github__link {
   color: #f402f4;
 }
