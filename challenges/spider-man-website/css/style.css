@@ -43,6 +43,7 @@ html {
   width: 8rem;
   color: #ffffff;
   font-family: var(--text-font-family);
+  text-transform: capitalize;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -73,6 +74,7 @@ html {
 .navbar__link {
   color: #000000;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .navbar__link:hover {
@@ -120,6 +122,7 @@ html {
 
 .game__title {
   font-family: var(--title-font-family);
+  text-transform: capitalize;
   font-size: 4rem;
 }
 
@@ -129,8 +132,13 @@ html {
   font-size: 1.5rem;
 }
 
+.game__text::first-letter {
+  text-transform: uppercase;
+}
+
 .game__text--ps5 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: bold;
   border: 1px solid #ffffff;
@@ -139,6 +147,7 @@ html {
 .game__text--bold {
   font-size: 1.8rem;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .game__text--price {
@@ -157,6 +166,10 @@ html {
   font-weight: bold;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+.game__button::first-letter {
+  text-transform: capitalize;
 }
 
 .favorite-icon {
@@ -200,7 +213,7 @@ html {
 
 .overview {
   position: relative;
-  background-image: url(../assets/images/Marvels-spider-man-2-page-banner-desktop-miles-and-peter.webp);
+  background-image: url(../assets/images/marvels-spider-man-2-page-banner-desktop-miles-and-peter-01-en-11sep23.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -232,11 +245,13 @@ html {
   width: 180px;
   text-align: center;
   font-weight: bold;
+  text-transform: capitalize;
   margin-bottom: 10px;
 }
 
 .overview__title {
   font-family: var(--title-font-family);
+  text-transform: uppercase;
   margin-bottom: 40px;
 }
 
@@ -254,6 +269,7 @@ html {
 
 .features__title {
   font-family: var(--title-font-family);
+  text-transform: uppercase;
   font-size: 4rem;
 }
 
@@ -271,12 +287,12 @@ html {
 
 .features__image {
   width: 80%;
-  aspect-ratio: 300/353;
+  aspect-ratio: 400/471;
   border: 2px solid #3a8080;
 }
 
 .features__image--big {
-  aspect-ratio: 600/707;
+  aspect-ratio: 800/943;
 }
 
 .features__image-caption {
